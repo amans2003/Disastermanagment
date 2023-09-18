@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/form-style.css">
+
+    <title>Disaster Management Organization Registration</title>
+</head>
+<body>
+    <h1>Disaster Management Organization Registration</h1>
+    <form action="process_registration.php" method="POST">
+        <!-- Contact Information -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="address">Mailing Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+
+        <!-- Organization Details -->
+        <label for="orgName">Organization Name:</label>
+        <input type="text" id="orgName" name="orgName" required>
+
+        <label for="orgType">Organization Type:</label>
+        <select id="orgType" name="orgType" required>
+            <option value="Government">Government</option>
+            <option value="NGO">NGO</option>
+            <option value="Community Group">Community Group</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="orgWebsite">Organization Website:</label>
+        <input type="url" id="orgWebsite" name="orgWebsite">
+        
+        <label for="orgMission">Mission and Goals:</label>
+        <textarea id="orgMission" name="orgMission" rows="4"></textarea>
+
+        <!-- Emergency Contact Information -->
+        <label for="emergencyContactName">Emergency Contact Person's Name:</label>
+        <input type="text" id="emergencyContactName" name="emergencyContactName">
+        
+        <label for="emergencyContactPhone">Emergency Contact Person's Phone Number:</label>
+        <input type="tel" id="emergencyContactPhone" name="emergencyContactPhone">
+        
+        <label for="emergencyContactEmail">Emergency Contact Person's Email Address:</label>
+        <input type="email" id="emergencyContactEmail" name="emergencyContactEmail">
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
