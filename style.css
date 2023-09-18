@@ -46,3 +46,10 @@ footer {
     text-align: center;
     padding: 0.5rem;
 }
+
+#bar{
+    display: flex;
+    flex-basis: 10px;
+    justify-content: center;
+}
+
