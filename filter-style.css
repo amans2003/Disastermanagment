@@ -14,7 +14,6 @@ body {
 h1 {
     font-size: 32px;
     text-align: center;
-    padding: 16px;
     color: white; /* Blue */
 
 }
@@ -24,7 +23,6 @@ header {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin-bottom: 45px ;
 }
 
 #filters {
@@ -103,4 +101,28 @@ table tr:hover {
 
 #padding{
     padding: 0px 200px 0px 200px;
+}
+
+
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
