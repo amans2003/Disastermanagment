@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Filter</title>
+    <link rel="stylesheet" href="filter-style.css">
+</head>
+<body>
+    <header>
+    <h1>Organization Filter</h1>
+    </header>
+
+    <div id="padding">
+
+    <div id="filters">
+        
+        <label for="org-type">Organization Type:</label>
+        <select id="org-type">
+            <option value="">Any</option>
+            <option value="private">Private</option>
+            <option value="ngo">NGO</option>
+            <option value="gov">Government</option>
+        </select>
+
+
+        <label for="resources">Resources Available:</label>
+        <select id="resources">
+            <option value="funds">Funds</option>
+            <option value="volunteers">Volunteers</option>
+            <option value="equipment">Equipment</option>
+            <!-- Add more resource options as needed -->
+        </select>
+
+        <label for="location">Location (State in India):</label>
+        <select id="location">
+            <option value="">Any</option>
+            <!-- Add Indian states as options -->
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <!-- Add more states -->
+        </select>
+
+        <label for="sort-order">Sort Order:</label>
+        <select id="sort-order">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+
+        <button id="filter-button">Filter</button>
+    </div>
+
+    <div id="organization-list">
+        <!-- Organizations will be displayed here -->
+    </div>
+
+    </div>
+
+    <script src="filter-script.js"></script>
+</body>
+</html>
