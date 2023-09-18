@@ -7,14 +7,12 @@ body, h1, h2, p {
 /* Apply a background color and set font styles */
 body {
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
     font-size: 24px;
     text-align: center;
-    padding: 20px 0;
-    color: #0072c6; /* Indian government website blue */
 }
 
 /* Style the form container */
@@ -62,3 +60,34 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #004c8c; /* Darker blue on hover */
 }
+
+/* Style the navigation menu */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
