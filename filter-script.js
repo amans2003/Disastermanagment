@@ -7,20 +7,28 @@ const organizations = [
 
 // Function to filter and sort organizations based on user input
 function filterOrganizations() {
-    const orgName = document.getElementById("org-name").value.toLowerCase();
     const orgType = document.getElementById("org-type").value.toLowerCase();
-    const officersCount = parseInt(document.getElementById("officers-count").value) || 0;
-    const resources = Array.from(document.getElementById("resources").selectedOptions).map(option => option.value);
+    const resourcesSelect = document.getElementById("resources");
+    const resources = Array.from(resourcesSelect.selectedOptions).map(option => option.value);
     const location = document.getElementById("location").value;
     const sortOrder = document.getElementById("sort-order").value;
 
-    let filteredOrgs = organizations.filter(org => {
-        return org.name.toLowerCase().includes(orgName) &&
-               (orgType === "" || org.type === orgType) &&
-               org.officersCount >= officersCount &&
-               (resources.length === 0 || resources.every(resource => org.resources.includes(resource))) &&
-               (location === "" || org.location === location);
-    });
+    // Check if "Nil" is selected and handle accordingly
+    let filteredOrgs;
+    if (resources.includes("nil")) {
+        // If "Nil" is selected, include organizations with no specific resources
+        filteredOrgs = organizations.filter(org => {
+            return (orgType === "" || org.type === orgType) &&
+                   (location === "" || org.location === location);
+        });
+    } else {
+        // Otherwise, filter based on selected resources
+        filteredOrgs = organizations.filter(org => {
+            return (orgType === "" || org.type === orgType) &&
+                   (resources.length === 0 || resources.every(resource => org.resources.includes(resource))) &&
+                   (location === "" || org.location === location);
+        });
+    }
 
     // Sort the organizations based on the selected sort order
     if (sortOrder === "asc") {
