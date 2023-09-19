@@ -36,7 +36,7 @@ const organizations = [
 
 // Function to filter and sort organizations based on user input
 function filterOrganizations() {
-    const orgType = document.getElementById("org-type").value.toLowerCase();
+    const orgType = document.getElementById("org-type").value;
     const resourcesSelect = document.getElementById("resources");
     const resources = Array.from(resourcesSelect.selectedOptions).map(option => option.value);
     const location = document.getElementById("location").value;
