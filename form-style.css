@@ -43,14 +43,14 @@ select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid#f7b263;
     border-radius: 3px;
 }
 
 /* Style the submit button */
 input[type="submit"] {
     background-color: #0072c6; /* Indian government website blue */
-    color: #fff;
+    color:#f7b263;
     padding: 10px 15px;
     border: none;
     border-radius: 3px;
@@ -65,7 +65,7 @@ input[type="submit"]:hover {
 
 /* Style the navigation menu */
 nav {
-    background-color: #444;
+    background-color:#151a4e;
 }
 
 nav ul {
@@ -81,14 +81,14 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #f7b263;
     font-weight: bold;
 }
 
 /* Style the header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #151a4e;
+    color:#f7b263;
     text-align: center;
     padding: 1rem;
 }
