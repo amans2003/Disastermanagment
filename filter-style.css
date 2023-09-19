@@ -14,20 +14,19 @@ body {
 h1 {
     font-size: 32px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: white; /* Blue */
+    color:#f7b263; /* Blue */
 
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #151a4e;
+    color: #f7b263;
     text-align: center;
     padding: 1rem;
 }
 
 #filters {
-    background-color: #fff;
+    background-color:#f7b263;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -40,7 +39,7 @@ label, select, input, button {
 select, input[type="text"], input[type="number"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #f7b263;
     border-radius: 3px;
 }
 
@@ -49,8 +48,8 @@ select[multiple] {
 }
 
 #sort-order, #filter-button {
-    background-color: #0072c6;
-    color: #fff;
+    background-color: white;
+    color:#151a4e;
     border: none;
     padding: 10px 15px;
     border-radius: 3px;
@@ -68,7 +67,7 @@ select[multiple] {
 
 .organization-box {
     background-color: #ffffff;
-    border: 1px solid #ccc;
+    border: 1px solid#f7b263;
     border-radius: 5px;
     margin-bottom: 20px;
     padding: 20px;
@@ -84,7 +83,7 @@ table {
 table th, table td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #f7b263;
 }
 
 table th {
@@ -106,7 +105,7 @@ table tr:hover {
 
 
 nav {
-    background-color: #444;
+    background-color:#151a4e;
 }
 
 nav ul {
@@ -124,7 +123,6 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #f7b263;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
 }
